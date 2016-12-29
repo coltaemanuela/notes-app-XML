@@ -1,0 +1,57 @@
+﻿<Window x:Class="Draft_3_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="378.358" Width="525" FontFamily="SketchFlow Print">
+    <Grid Margin="0,0,-8,-21">
+        <RichTextBox x:Name="Write" BorderBrush="#FF6CA885" HorizontalAlignment="Left" Height="211" Margin="24,107,0,0" VerticalAlignment="Top" Width="457" Opacity="0.7" TextOptions.TextHintingMode="Animated">
+            <!--<FlowDocument>
+                <Paragraph>
+                    <Run Text="What's on your mind?" FontFamily="SketchFlow Print"/>
+                </Paragraph>
+            </FlowDocument>-->
+        </RichTextBox>
+        <Menu  HorizontalAlignment="Left" Height="32" Margin="319,21,0,0" VerticalAlignment="Top" Width="106" Opacity="0.55">
+
+            <MenuItem x:Name="Bold" Header="" FontWeight="Bold" Click="Bold_Click"  >
+                <MenuItem.Background>
+                    <ImageBrush ImageSource="C:\Users\Ema\Desktop\Draft 3 WPF\Draft 3 WPF\bold.png" Stretch="Uniform"/>
+                </MenuItem.Background>
+                <!--
+                <Window.Resources>
+                    <Style x:Key="Label" TargetType="{x:Type Label}">
+                    <Style.Setters>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                    </Style.Setters>
+                </Style>
+                </ Window.Resources>
+ -->
+            </MenuItem>
+            <MenuItem Name="Italic" Header="" FontSize="16" Click="Italic_Click" >
+                <MenuItem.Background>
+                    <ImageBrush ImageSource="C:\Users\Ema\Desktop\Draft 3 WPF\Draft 3 WPF\italic.png" Stretch="Uniform"/>
+                </MenuItem.Background>
+            </MenuItem>
+            <MenuItem Name="Underline" Header="" Click="Underline_Click" >
+                <MenuItem.Background>
+                    <ImageBrush ImageSource="C:\Users\Ema\Desktop\Draft 3 WPF\Draft 3 WPF\Underline.png" Stretch="UniformToFill"/>
+                </MenuItem.Background>
+            </MenuItem>
+            <MenuItem x:Name="TextColor" Header="" RenderTransformOrigin="1.249,0.378" Width="24" Click="TextColor_Click">
+                <MenuItem.Background>
+                    <ImageBrush ImageSource="C:\Users\Ema\Desktop\Draft 3 WPF\Draft 3 WPF\highlight.png" Stretch="UniformToFill"/>
+                </MenuItem.Background>
+            </MenuItem>
+
+        </Menu>
+        <Button Name="SaveButton" Content="" HorizontalAlignment="Left" Height="29" Margin="24,24,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.686,1.509" FontFamily="SketchFlow Print" Opacity="0.9" Click="SaveButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="C:\Users\Ema\Desktop\Draft 3 WPF\Draft 3 WPF\check.png" Stretch="Uniform" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Separator HorizontalAlignment="Left" Height="11" Margin="24,91,0,0" VerticalAlignment="Top" Width="458" Opacity="0.6" Background="#FF6CA885"/>
+        <Button Name="BiggerFont" Content="A" HorizontalAlignment="Left" Height="32" Margin="454,24,0,0" VerticalAlignment="Top" Width="24" FontSize="18" Opacity="0.55" FontWeight="ExtraLight" FontFamily="Times New Roman" Click="BiggerFont_Click" BorderBrush="#FF6CA885"/>
+        <Button Name="SmallerFont" Content="A" HorizontalAlignment="Left" Height="32" Margin="425,24,0,0" VerticalAlignment="Top" Width="24" Opacity="0.55" FontFamily="Times New Roman" Click="SmallerFont_Click" BorderBrush="#FF6CA885"/>
+        <Label Name="Timestamp" Content="Timpestamp" HorizontalAlignment="Left" Height="28" Margin="24,63,0,0" VerticalAlignment="Top" Width="320" Background="{x:Null}" Opacity="0.2"/>
+
+    </Grid>
+</Window>
